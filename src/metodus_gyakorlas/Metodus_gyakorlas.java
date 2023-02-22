@@ -18,11 +18,24 @@ public class Metodus_gyakorlas {
     private static int osszead(int a, int b) {
         return a + b;
     }
+    
+    private static int negyszamosszege(int a, int b, int c, int d) {
+        return a + b + c + d;
+    }
+    
+     private static int haromszamgyok(int a, int b, int c) {
+        int szam = a + b + c;
+         return (int) Math.sqrt(szam);
+    }
 
     private static void kiir(String szoveg) {
         szoveg = Integer.toString(elso10szamosszege());
         System.out.println(szoveg);
         szoveg = Integer.toString(osszead(1, 2));
+        System.out.println(szoveg);
+        szoveg = Integer.toString(negyszamosszege(3, 4, 1, 5));
+        System.out.println(szoveg);
+        szoveg = Integer.toString(haromszamgyok(2, 5, 1));
         System.out.println(szoveg);
     }
 
