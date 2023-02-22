@@ -6,22 +6,22 @@ public class Metodus_gyakorlas {
 
     }
     
- private static void elso10szamosszege(){   
+ private static int elso10szamosszege(){   
    int osszeg = 0;
    for (int i = 0; i < 10; i++) {
     osszeg +=1;
  }
+   return osszeg;
 }
-    private static int osszead() {
-        int a = 0;
-        int b = 0;
-        int szam = a+b;
-        kiir(a, b, szam);
-        return szam;
+    private static int osszead(int a, int b) {
+        return a+b;
     }
 
-    private static void kiir(int a, int b, int szam) {
-        System.out.printf("%d + %d = %d\n", a, b, szam);
+    private static void kiir(String szoveg) {
+        szoveg = Integer.toString( elso10szamosszege());
+        System.out.println(szoveg);
+        szoveg = Integer.toString( osszead(1 ,2));
+        System.out.println(szoveg);
     }
 
  
