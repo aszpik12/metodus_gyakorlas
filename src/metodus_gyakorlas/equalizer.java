@@ -8,11 +8,9 @@ public class Equalizer {
     }
 
     private static void kockak() {
-        eq();
-        eq();
-        eq();
-        eq();
-        eq();
+            for (int i = 0; i < 5; i++) {
+                eq();
+        }
     }
 
     private static void eq() {
