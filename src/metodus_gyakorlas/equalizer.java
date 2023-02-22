@@ -8,17 +8,16 @@ public class Equalizer {
     }
 
     private static void kockak() {
-            eq(-1);
-            eq(-1);
-            eq(-1);
-            eq(-1);
-            eq(-1);
+            eq();
+            eq();
+            eq(12);
+            eq();
+            eq(3);
     }
 
-    private static void eq(int a) {
+    private static void eq() {
         int min = 3;
         int max = 7;
-        if (a == -1){
         int rand = (int) (Math.random() * (max - min + 1) + min);
         int index = 0;
         while (index < rand) {
@@ -27,13 +26,14 @@ public class Equalizer {
         }
         System.out.println();
     }
-        else{
-            int index = 0;
-            while (index < a){
-                System.out.printf("\u001B[45m" + " ");
-                index++;
-            }
-            System.out.println("");
+    
+    private static void eq(int sorszam) {
+        int index = 0;
+        while (index < sorszam) {
+            System.out.printf("\u001B[45m" + " ");
+            index++;
         }
+        System.out.println();
     }
+    
 }
