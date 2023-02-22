@@ -30,13 +30,13 @@ public class Metodus_gyakorlas {
 
     private static void kiir(String szoveg) {
         szoveg = Integer.toString(elso10szamosszege());
-        System.out.println(szoveg);
+        System.out.println("első tíz szám összege: "+szoveg);
         szoveg = Integer.toString(osszead(1, 2));
-        System.out.println(szoveg);
+        System.out.println("a+b: "+szoveg);
         szoveg = Integer.toString(negyszamosszege(3, 4, 1, 5));
-        System.out.println(szoveg);
+        System.out.println("a+b+c+d: "+szoveg);
         szoveg = Integer.toString(haromszamgyok(2, 5, 1));
-        System.out.println(szoveg);
+        System.out.println("(sqrt(a+b+c)): "+szoveg);
     }
 
 }
