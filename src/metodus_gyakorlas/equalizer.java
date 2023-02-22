@@ -8,17 +8,17 @@ public class Equalizer {
     }
 
     private static void kockak() {
-            eq(0);
-            eq(0);
-            eq(0);
-            eq(0);
-            eq(0);
+            eq(-1);
+            eq(-1);
+            eq(-1);
+            eq(-1);
+            eq(-1);
     }
 
     private static void eq(int a) {
         int min = 3;
         int max = 7;
-        if (a == 0){
+        if (a == -1){
         int rand = (int) (Math.random() * (max - min + 1) + min);
         int index = 0;
         while (index < rand) {
