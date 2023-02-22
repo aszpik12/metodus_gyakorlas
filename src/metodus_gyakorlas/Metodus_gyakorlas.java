@@ -24,8 +24,7 @@ public class Metodus_gyakorlas {
     }
     
      private static int haromszamgyok(int a, int b, int c) {
-        int szam = a + b + c;
-         return (int) Math.sqrt(szam);
+         return (int) Math.sqrt(a+b+c);
     }
 
     private static void kiir(String szoveg) {
