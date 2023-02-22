@@ -1,19 +1,23 @@
 package metodus_gyakorlas;
 
-public class equalizer {
+public class Equalizer {
 
     public static void main(String[] args) {
-        eq();
-        eq();
-        eq();
-        eq();
-        eq();
+        kockak();
 
     }
 
+    private static void kockak() {
+        eq();
+        eq();
+        eq();
+        eq();
+        eq();
+    }
+
     private static void eq() {
-        int min = 1;
-        int max = 6;
+        int min = 3;
+        int max = 7;
 
         int rand = (int) (Math.random() * (max - min + 1) + min);
         int index = 0;
