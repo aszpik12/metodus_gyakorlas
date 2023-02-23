@@ -18,25 +18,11 @@ public class Equalizer {
     }
 
     private static void eq() {
-        int min = 3;
-        int max = 7;
-        rand = (int) (Math.random() * (max - min + 1) + min);
-        int index = 0;
-        while (index < rand) {
-            System.out.printf("\u001B[45m" + " ");
-            index++;
-        }
-        System.out.println();
-
+        eq(false);
     }
 
     private static void eq(int sorszam) {
-        int index = 0;
-        while (index < sorszam) {
-            System.out.printf("\u001B[45m" + " ");
-            index++;
-        }
-        System.out.println();
+         eq(sorszam, false);
     }
 
     private static void eq(boolean szamolas) {
@@ -44,16 +30,11 @@ public class Equalizer {
         int min = 3;
         int max = 7;
         rand = (int) (Math.random() * (max - min + 1) + min);
-        int index = 0;
-        while (index < rand) {
-            System.out.printf("\u001B[45m" + " ");
-            index++;
+        if ( szamolas == true){
+               eq(rand, true);
         }
-               if (szamolas == true){
-            System.out.println("\u001B[40m(" + rand + ")");
-    }
         else{
-            System.out.println("");
+            eq(rand, false);
         }
     }
 
